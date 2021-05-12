@@ -12,12 +12,43 @@
 </head>
 
 <body>
-  <main>
+  <div class='app-container'>
+    <main>
       <h1>Sandbox1</h1>
-      <div>
-        Content-to-be
+      <div id='options-container' class='options-container'>
+        <h2>What are you looking for?</h2>
+        <div class='option-buttons-container'>
+          <button id='books-button'>
+            Books
+          </button>
+          <button id='movies-button'>
+            Movies
+          </button>
+          <button id='articles-button'>
+            Articles
+          </button>
+        </div>
       </div>
-  </main>
+      <div class='content-container hidden'>
+        <h3 id='results-title'>Movies!</h2>
+        <div id='results-container' class='results-container'>
+          <ol>
+            <li>Movie 1</li>
+            <li>Movie 2</li>
+            <li>Movie 3</li>
+            <li>Movie 4</li>
+          </ol>
+          <ul>
+            <li>Book 1</li>
+            <li>Book 2</li>
+            <li>Book 3</li>
+            <li>Book 4</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </div>
+  
   <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
   <script src="index.js"></script>
 </body>
